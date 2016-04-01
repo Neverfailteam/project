@@ -17,6 +17,11 @@ class PostsController < ApplicationController
         end
     end
     def edit
+        if current_user.id == @post.user_id
+            render 'edit'
+        else 
+            flash.now[:notice] = "You can't edit this post." 
+        end
     end
     def update
         if @post.update(post_params)
@@ -26,8 +31,13 @@ class PostsController < ApplicationController
         end
     end
     def destroy
-        @post.destroy
-        redirect_to root_path
+        if current_user.id == @post.user_id
+            @post.destroy
+            redirect_to root_path
+        else 
+            flash.now[:notice] = "You can't edit this post." 
+            redirect_to root_path
+        end
     end
     private
     def post_params
