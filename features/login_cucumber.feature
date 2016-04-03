@@ -6,4 +6,4 @@ So that they have a better experience
 Scenario: User logged in
 Given Log in
 When I log in
-Then I should see home
+Then I should see homepage
