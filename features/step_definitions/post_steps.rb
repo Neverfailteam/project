@@ -8,6 +8,7 @@ Given (/^Log in post$/) do
   fill_in "user_password", :with => password
   fill_in "user_password_confirmation", :with => password
   click_button "Create my account"
+  expect(page).to have_content("Diễn đàn sôi động")
 end
 When(/^I click newpost$/) do
   expect(page).to have_content("Diễn đàn sôi động")
