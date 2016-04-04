@@ -12,7 +12,6 @@ end
 When(/^I log in$/) do
   click_button "Log in"
 end
-
 Then(/^I should see homepage$/) do
   visit root_path
 end
