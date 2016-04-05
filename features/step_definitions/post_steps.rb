@@ -1,4 +1,4 @@
-Given (/^Log in post$/) do 
+Given (/^Signup Log in post$/) do 
   visit signup_path
   name = "test"
   email = 'testing@man.net'
@@ -12,8 +12,14 @@ Given (/^Log in post$/) do
 end
 When(/^I click newpost$/) do
   expect(page).to have_content("Diễn đàn sôi động")
-  visit new_post_path
+  find_link("New post").click
+  expect(page).to have_content("Post")
+  title = "test"
+  content = "this is content"
+  fill_in "post_title", :with => title
+  fill_in "post_content", :with => content
+  click_button "Post"
 end
 Then(/^I should see newpostpage$/) do
-   expect(page).to have_content("Post")
+   expect(page).to have_content("test")
 end
