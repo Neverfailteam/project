@@ -1,4 +1,4 @@
-Given (/^Signup Log in post$/) do 
+Given (/^Signup$/) do 
   visit signup_path
   name = "test"
   email = 'testing@man.net'
@@ -10,16 +10,30 @@ Given (/^Signup Log in post$/) do
   click_button "Create my account"
   expect(page).to have_content("Diễn đàn sôi động")
 end
-When(/^I click newpost$/) do
-  expect(page).to have_content("Diễn đàn sôi động")
+Given (/^Login$/) do 
+  visit login_path
+  email = 'testing@man.net'
+  password = 'secretpass'
+  visit login_path
+  fill_in "session_email", :with => email
+  fill_in "session_password", :with => password
+  click_button "Log in"
+end
+
+When(/^I comment$/) do
   find_link("New post").click
-  expect(page).to have_content("Post")
   title = "test"
   content = "this is content"
   fill_in "post_title", :with => title
   fill_in "post_content", :with => content
   click_button "Post"
+  visit root_path
+  click_link "test"
+  comment = "test code"
+  fill_in "comment_comment", :with => comment
+  click_button "Create Comment"
 end
-Then(/^I should see newpostpage$/) do
-   expect(page).to have_content("test")
+
+Then(/^I should see my comment$/) do
+  expect(page).to have_content("test code")
 end

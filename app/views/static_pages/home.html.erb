@@ -131,7 +131,7 @@
 
 
     <% @posts .each do |post| %>
-    <h3><%= link_to post.title, post %></h3>
+    <h3><%= link_to post.title, post, :id => post.id %></h3>
     <% if post.user != nil %>
     <p>Published at <%= time_ago_in_words(post.created_at) %> by <%= post.user.name %> </p>
     <% else %>
