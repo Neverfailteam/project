@@ -58,3 +58,4 @@ group :test do
   gem 'database_cleaner'
 end
 gem 'rspec', '~> 3.4'
+gem 'simplecov', :require => false, :group => :test
