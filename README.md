@@ -8,5 +8,5 @@ Các chức năng của diễn đàn
 - link ảnh https://github.com/Neverfailteam/project/blob/master/1.png
 - link down https://drive.google.com/file/d/0B_Aul-ZtAP56NEpmY2JQb0owRm8/view?usp=sharing
   Đây là các task và phần code tương ứng:
-- home
+- static_pagesc_controler: https://github.com/Neverfailteam/project/blob/master/app/controllers/static_pages_controller.rb
 
