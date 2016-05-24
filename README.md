@@ -3,9 +3,9 @@ Các chức năng của diễn đàn
 - Tạo tài khoản 
 - Tạo post mới để mọi người cùng thảo luận
 - Mọi người có thể comment từng post
-- Đây là link của ứng dụng : https://desolate-eyrie-71209.herokuapp.com/ (nếu nó die bạn inbox cho mình facebook       https://www.facebook.com/taiducnguyen1996)
+- Đây là link của ứng dụng : https://desolate-eyrie-71209.herokuapp.com/
 - Link pivotal tracker https://www.pivotaltracker.com/n/projects/1556149
-- 
+
   THÀNH VIÊN:
 - Nguyễn Đức Tài
 - Nguyễn Văn Cương
