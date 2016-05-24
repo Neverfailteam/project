@@ -4,10 +4,8 @@ Các chức năng của diễn đàn
 - Tạo post mới để mọi người cùng thảo luận
 - Mọi người có thể comment từng post
 - Đây là link của ứng dụng : https://desolate-eyrie-71209.herokuapp.com/ (nếu nó die bạn inbox cho mình facebook       https://www.facebook.com/taiducnguyen1996)
-- Mình đã test đc 81,02 % app
-- link ảnh https://github.com/Neverfailteam/project/blob/master/1.png
-- link down https://drive.google.com/file/d/0B_Aul-ZtAP56NEpmY2JQb0owRm8/view?usp=sharing
-  Đây là các task và phần code tương ứng(mình rút gọn lại so với pivotal tracker):
+- Link pivotal tracker https://www.pivotaltracker.com/n/projects/1556149
+  QUY TRÌNH DỰ ÁN :
 - tạo static_pagesc_controller, post controller, comment controller, sesion controller, user controller https://github.com/Neverfailteam/project/tree/master/app/controllers
 - tạo home.html.erb: https://github.com/Neverfailteam/project/blob/master/app/views/static_pages/home.html.erb
 - sửa root trong route thành 'static_pages#home', sửa route để có thể sử dụng post và comment, sửa trang chủ để hiển thị các post https://github.com/Neverfailteam/project/blob/master/config/routes.rb
@@ -18,4 +16,8 @@ Các chức năng của diễn đàn
 - tạo phần test cho log_in, post, comment sử dụng cucumber https://github.com/Neverfailteam/project/tree/master/features
 - tạo các step cho test https://github.com/Neverfailteam/project/tree/master/features/step_definitions
 - phần coverage đạt 80% mình để ở trên nhé
+- TEST
+- Test đc 81,02 % app
+-link ảnh https://github.com/Neverfailteam/project/blob/master/1.png
+- link down https://drive.google.com/file/d/0B_Aul-ZtAP56NEpmY2JQb0owRm8/view?usp=sharing
 
