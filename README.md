@@ -23,7 +23,6 @@ QUY TRÌNH DỰ ÁN :
 - tạo comment model belong user and post https://github.com/Neverfailteam/project/blob/master/app/models/comment.rb
 - tạo phần test cho log_in, post, comment sử dụng cucumber https://github.com/Neverfailteam/project/tree/master/features
 - tạo các step cho test https://github.com/Neverfailteam/project/tree/master/features/step_definitions
-- phần coverage đạt 80% mình để ở trên nhé
 
  TEST
 - Test đc 81,02 % app
