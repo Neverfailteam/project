@@ -5,7 +5,8 @@ Các chức năng của diễn đàn
 - Mọi người có thể comment từng post
 - Đây là link của ứng dụng : https://desolate-eyrie-71209.herokuapp.com/ (nếu nó die bạn inbox cho mình facebook       https://www.facebook.com/taiducnguyen1996)
 - Link pivotal tracker https://www.pivotaltracker.com/n/projects/1556149
-  QUY TRÌNH DỰ ÁN :
+  
+QUY TRÌNH DỰ ÁN :
 - tạo static_pagesc_controller, post controller, comment controller, sesion controller, user controller https://github.com/Neverfailteam/project/tree/master/app/controllers
 - tạo home.html.erb: https://github.com/Neverfailteam/project/blob/master/app/views/static_pages/home.html.erb
 - sửa root trong route thành 'static_pages#home', sửa route để có thể sử dụng post và comment, sửa trang chủ để hiển thị các post https://github.com/Neverfailteam/project/blob/master/config/routes.rb
